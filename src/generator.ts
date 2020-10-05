@@ -1,5 +1,5 @@
 import { Color, ColorFormatLabel, lch } from './colors';
-const convert = require('color-convert');
+import convert from 'color-convert';
 
 export class ConsistentShading {
     private _base: lch;

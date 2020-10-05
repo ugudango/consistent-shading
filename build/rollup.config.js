@@ -1,5 +1,6 @@
-import resolve from '@rollup/plugin-node-resolve';
+import { nodeResolve } from '@rollup/plugin-node-resolve';
 import replace from '@rollup/plugin-replace';
+import cjs from '@rollup/plugin-commonjs';
 import { terser } from 'rollup-plugin-terser';
 import minimist from 'minimist';
 import typescript from '@rollup/plugin-typescript';
@@ -10,7 +11,7 @@ const argv = minimist(process.argv.slice(2));
 const baseConfig = {
   input: 'src/index.ts',
   plugins: {
-    customResolver: resolve({
+    customResolver: nodeResolve({
       extensions: ['.js', '.jsx', '.ts', '.tsx', '.vue'],
     }),
     replace: {
@@ -35,6 +36,8 @@ if(!argv.format || argv.format === 'es') {
         declarationDir: 'dist/esm/types/',
         rootDir: 'src/',
       }),
+      cjs(),
+      nodeResolve(),
     ],
   };
 
@@ -54,6 +57,8 @@ if (!argv.format || argv.format === 'cjs') {
     plugins: [
       replace(baseConfig.plugins.replace),
       typescript(),
+      cjs(),
+      nodeResolve(),
     ],
   };
 
@@ -78,6 +83,8 @@ if (!argv.format || argv.format === 'iife') {
           ecma: 5,
         },
       }),
+      cjs(),
+      nodeResolve(),
     ],
   };
 
