@@ -2,7 +2,7 @@
   "name": "consistent-shading",
   "private": false,
   "description": "Shade consitency for various hues, based on luminance.",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "license": "MIT",
   "main": "dist/index.ssr.js",
   "browser": "dist/esm/index.js",
@@ -26,13 +26,15 @@
     "type": "git",
     "url": "https://github.com/ugudango/consistent-shading.git"
   },
+  "dependencies": {
+    "color-convert": "^2.0.1"
+  },
   "devDependencies": {
     "@rollup/plugin-babel": "^5.2.1",
     "@rollup/plugin-commonjs": "^15.1.0",
     "@rollup/plugin-node-resolve": "^9.0.0",
     "@rollup/plugin-replace": "^2.3.3",
     "@rollup/plugin-typescript": "^6.0.0",
-    "color-convert": "^2.0.1",
     "cross-env": "^7.0.2",
     "minimist": "^1.2.5",
     "rollup": "^2.28.2",
