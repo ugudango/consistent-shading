@@ -2,7 +2,7 @@
   "name": "consistent-shading",
   "private": false,
   "description": "Shade consitency for various hues, based on luminance.",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "license": "MIT",
   "main": "dist/index.ssr.js",
   "browser": "dist/esm/index.js",

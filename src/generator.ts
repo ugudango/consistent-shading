@@ -19,7 +19,7 @@ export class ConsistentShading {
         shades.forEach((shade, index) => {
             const converted = convert[shade.format]['lch'](shade.value);
             this._shades.push(converted);
-            this._deltas.push(this._base[0] - converted[0]);
+            this._deltas.push(converted[0] - this._base[0]);
         })
     }
 
