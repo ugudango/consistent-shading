@@ -2,6 +2,18 @@
   "name": "consistent-shading",
   "private": false,
   "description": "Shade consitency for various hues, based on luminance.",
+  "keywords": [
+    "color",
+    "consistent",
+    "shade",
+    "shading",
+    "shadow",
+    "light",
+    "highlight",
+    "hcl",
+    "lch",
+    "chroma"
+  ],
   "version": "1.0.4",
   "license": "MIT",
   "main": "dist/index.ssr.js",

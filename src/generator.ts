@@ -8,10 +8,6 @@ export class ConsistentShading {
 
     private _deltas!: number[];
 
-    set base(color: Color) {
-        this._base = convert[color.format]['lch'](color.value);
-    }
-
     public constructor(base: Color, shades: Color[]) {
         this._base = convert[base.format]['lch'](base.value);
         this._shades = new Array<lch>();
@@ -20,7 +16,7 @@ export class ConsistentShading {
             const converted = convert[shade.format]['lch'](shade.value);
             this._shades.push(converted);
             this._deltas.push(converted[0] - this._base[0]);
-        })
+        });
     }
 
     public generate(base: Color, exportFormat?: ColorFormatLabel) {
