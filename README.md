@@ -7,6 +7,8 @@
 
 Shade consitency for various hues, based on luminance.
 
+![](README/consistent-shading.png)
+
 ## Problem
 
 The colour spectrum differs in luminance, at maximum saturation. As such, applying the same shadows throughout your design will create uneven colouring, due to the difference in *contrast*.
