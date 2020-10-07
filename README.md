@@ -9,6 +9,26 @@ Shade consitency for various hues, based on luminance.
 
 ![](README/consistent-shading.png)
 
+## Installation
+
+For the npm package, use\:
+
+```bash
+npm install --save consistent-shading
+```
+
+For the ECMAScript module in browsers, use\:
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/consistent-shading@latest/dist/esm/index.js"></script>
+```
+
+For the minfied module *(only ~750 bytes!)* in browsers, use\:
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/consistent-shading@latest/dist/index.min.js"></script>
+```
+
 ## Problem
 
 The colour spectrum differs in luminance, at maximum saturation. As such, applying the same shadows throughout your design will create uneven colouring, due to the difference in *contrast*.

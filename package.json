@@ -14,9 +14,9 @@
     "lch",
     "chroma"
   ],
-  "version": "1.0.6",
+  "version": "1.0.7",
   "license": "MIT",
-  "main": "dist/index.ssr.js",
+  "main": "dist/ssr/index.js",
   "browser": "dist/esm/index.js",
   "module": "dist/esm/index.js",
   "unpkg": "dist/index.min.js",
