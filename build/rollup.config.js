@@ -51,18 +51,14 @@ if (!argv.format || argv.format === 'cjs') {
     ...baseConfig,
     output: {
       compact: true,
-      dir: 'dist/ssr',
+      file: pkg.main,
       format: 'cjs',
       name: 'ConsistentShading',
       exports: 'auto',
     },
     plugins: [
       replace(baseConfig.plugins.replace),
-      typescript({
-        declaration: true,
-        declarationDir: 'dist/ssr/types/',
-        rootDir: 'src/',
-      }),
+      typescript(),
     ],
   };
 

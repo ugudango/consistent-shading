@@ -14,16 +14,16 @@
     "lch",
     "chroma"
   ],
-  "version": "1.0.7",
+  "version": "1.0.8",
   "license": "MIT",
-  "main": "dist/ssr/index.js",
+  "main": "dist/index.ssr.js",
   "browser": "dist/esm/index.js",
   "module": "dist/esm/index.js",
   "unpkg": "dist/index.min.js",
   "files": [
     "dist/*"
   ],
-  "types": "esm/types/index.d.ts",
+  "types": "dist/esm/types/index.d.ts",
   "scripts": {
     "build": "cross-env NODE_ENV=production rollup -c build/rollup.config.js -m",
     "build:ssr": "cross-env NODE_ENV=production rollup -c build/rollup.config.js -m --format cjs",
