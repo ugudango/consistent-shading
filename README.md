@@ -3,7 +3,7 @@
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/ugudango/consistent-shading/build?style=for-the-badge)
 ![NPM](https://img.shields.io/npm/l/consistent-shading?style=for-the-badge)
 ![npm](https://img.shields.io/npm/v/consistent-shading?style=for-the-badge)
-![npm bundle size](https://img.shields.io/bundlephobia/min/consistent-shading?style=for-the-badge)
+![npm bundle size](https://img.badgesize.io/https:/unpkg.com/consistent-shading/dist/index.min.js?label=Minified%20size&style=for-the-badge&color=blue)
 
 Shade consitency for various hues, based on luminance.
 
