@@ -19,7 +19,7 @@ export class ConsistentShading {
         });
     }
 
-    public generate(base: Color, exportFormat?: ColorFormatLabel) {
+    public generate(base: Color, exportFormat?: ColorFormatLabel): Color[] {
         let exportFormatInUse: ColorFormatLabel;
         if (typeof exportFormat === 'undefined')
             exportFormatInUse = base.format;
