@@ -1,4 +1,5 @@
-type rgb = [number, number, number];
+export type rgb = [number, number, number];
+export type rgba = [number, number, number, number];
 type hsl = [number, number, number];
 type hsv = [number, number, number];
 type hwb = [number, number, number];
@@ -16,6 +17,7 @@ type gray = [number];
 
 export type ColorFormat =
     rgb
+    | rgba
     | hsl
     | hsv
     | hwb
@@ -33,6 +35,7 @@ export type ColorFormat =
 
 export type ColorFormatLabel =
     'rgb'
+    | 'rgba'
     | 'hsl'
     | 'hsv'
     | 'hwb'
