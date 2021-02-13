@@ -12,7 +12,9 @@
     "highlight",
     "hcl",
     "lch",
-    "chroma"
+    "chroma",
+    "alpha",
+    "correct"
   ],
   "version": "1.1.0",
   "license": "MIT",
