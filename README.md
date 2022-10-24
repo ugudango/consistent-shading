@@ -5,7 +5,7 @@
 ![npm](https://img.shields.io/npm/v/consistent-shading?style=for-the-badge)
 ![npm bundle size](https://img.badgesize.io/https:/unpkg.com/consistent-shading/dist/index.min.js?label=Minified%20size&style=for-the-badge&color=blue)
 
-Shade consitency for various hues, based on luminance. **Supports both solid and transparent shades.**
+Shade consistency for various hues, based on luminance. **Supports both solid and transparent shades.**
 
 ![](README/consistent-shading.png)
 
